@@ -1,9 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elkube</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <h1>Elkube</h1>
+    <h2>Statut du serveur Minecraft</h2>
+    <p id="status"></p>
+
+    <script>
+        $(document).ready(function(){
+            function checkServerStatus() {
+                $.ajax({
+                    url: "https://api.mcsrvstat.us/2/your-server-address.com", // Remplacez "your-server-address.com" par l'adresse de votre serveur
+                    type: "GET",
+                    dataType: "json",
+                    success: function(response) {
+                        if(response.online) {
+                            $("#status").text("Le serveur est en ligne - Joueurs en ligne : " + response.players.online);
+                        } else {
+                            $("#status").text("Le serveur est hors ligne");
+                        }
+                    },
+                    error: function() {
+                        $("#status").text("Impossible de récupérer le statut du serveur.");
+                    }
+                });
+            }
+
+            // Vérifier le statut toutes les 30 secondes
+            setInterval(checkServerStatus, 30000);
+            
+            // Vérifier le statut au chargement de la page
+            checkServerStatus();
+        });
+    </script>
   </body>
 </html>
