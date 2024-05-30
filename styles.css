@@ -1,20 +1,33 @@
-#online
-{
-    background-color: rgb(0, 211, 95);
-    color: white;
-    padding: 3px;
+body{
+
+    background: linear-gradient(90deg, rgb(244, 255, 92) 0%, rgb(241, 33, 26) 100%);
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-#offline
-{
-    background-color: rgb(247, 0, 0);
-    color: white;
-    padding: 3px;
+h1{
+    font-family: 'Black Ops One', system-ui;
+    font-family: 'Poppins', sans-serif;
+
 }
 
-#error
+h2{
+    font-family: 'Black Ops One', system-ui;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#status
 {
+    color: white;
+    padding: 3px;
+
     background-color: rgb(255, 238, 0);
-    color: white;
-    padding: 3px;
+}
+
+.infobulle
+{
+    background: linear-gradient(90deg, rgb(92, 255, 241) 0%, rgb(24, 235, 4) 100%);
+    margin-left: 5%;
+    margin-right: 5%;
 }

@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.css">
     <title>Elkube</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
@@ -9,9 +11,15 @@
     <h1>Site en construction</h1>
     <h1>Elkube</h1>
     <h2>Statut du serveur Minecraft</h2>
-    <p id="online"></p>
-    <p id="offline"></p>
-    <p id ="error"></p>
+    <p id="status">Chargement des informations du serveur...</p>
+    <button onclick="checkServerStatus">Raffraichir</button>
+
+    <h2>Nos gameplays</h2>
+    <section>
+        <div class="bulleinfo" align="left"><h3>BedWars</h3></div>
+        <div class="bulleinfo" align="left"><h3>OneBlock</h3></div>
+        <div class="bulleinfo" align="left"><h3>SMP avec magie</h3></div>
+    </section>
 
     <script>
         $(document).ready(function(){
@@ -22,13 +30,16 @@
                     dataType: "json",
                     success: function(response) {
                         if(response.online) {
-                            $("#online").text("Le serveur est en ligne - Joueurs en ligne : " + response.players.online);
+                            $("#status").text("Le serveur est en ligne - Joueurs en ligne : " + response.players.online);
+                            $("#status").css("background-color", " rgb(0, 211, 95)");
                         } else {
-                            $("#offline").text("Le serveur est hors ligne");
+                            $("#status").text("Le serveur est hors ligne");
+                            $("#status").css("background-color", "rgb(247, 0, 0)");
                         }
                     },
                     error: function() {
                         $("#error").text("Impossible de récupérer le statut du serveur.");
+                        $("#status").css("background-color", "rgb(255, 238, 0)");
                     }
                 });
             }
