@@ -1,33 +1,57 @@
-body{
-
+body {
     background: linear-gradient(90deg, rgb(244, 255, 92) 0%, rgb(241, 33, 26) 100%);
     margin-left: 5%;
     margin-right: 5%;
 }
 
-h1{
+h1, h2 {
     font-family: 'Black Ops One', system-ui;
     font-family: 'Poppins', sans-serif;
-
 }
 
-h2{
-    font-family: 'Black Ops One', system-ui;
-    font-family: 'Poppins', sans-serif;
-
-}
-
-#status
-{
+#status {
     color: white;
-    padding: 3px;
-
+    padding: 5px;
+    padding-left:1%;
+    margin-left: 1%;
     background-color: rgb(255, 238, 0);
 }
 
-.infobulle
-{
-    background: linear-gradient(90deg, rgb(92, 255, 241) 0%, rgb(24, 235, 4) 100%);
-    margin-left: 5%;
-    margin-right: 5%;
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px; 
+    margin-top: 10px;
 }
+
+.bulleinfo {
+    background: linear-gradient(90deg, rgb(92, 255, 241) 0%, rgb(24, 235, 4) 100%);
+    padding: 20px;
+    border-style: ridge;
+    border-width: 10px;
+    border-color: rgb(241, 33, 26);
+    border-radius: 5%;
+    width: 300px; 
+    text-align: center; 
+}
+
+p, li
+{
+    font-size: 20px;
+}
+
+.button-home {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    display: inline-block;
+    border-radius: 30px;
+    background-image: linear-gradient(to right top, #0066ff, #00a1ff, #00c6eb, #00e087, #a8eb12);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }

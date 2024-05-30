@@ -1,24 +1,49 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
     <title>Elkube</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  </head>
-  <body>
+</head>
+<body>
     <h1>Site en construction</h1>
     <h1>Elkube</h1>
     <h2>Statut du serveur Minecraft</h2>
     <p id="status">Chargement des informations du serveur...</p>
-    <button onclick="checkServerStatus">Raffraichir</button>
+    <button onclick="checkServerStatus()">Raffraichir</button>
 
     <h2>Nos gameplays</h2>
-    <section>
-        <div class="bulleinfo" align="left"><h3>BedWars</h3></div>
-        <div class="bulleinfo" align="left"><h3>OneBlock</h3></div>
-        <div class="bulleinfo" align="left"><h3>SMP avec magie</h3></div>
+    <section class="section">
+        <div class="bulleinfo" onclick="window.location.href = './BedWars.html';">
+            <h2>BedWars</h2>
+            <p>Combattez en solo ou en équipes pour défendre votre lit et gagner la victoire !</p>
+        </div>
+        <div class="bulleinfo">
+            <h2>OneBlock</h2>
+            <p>Développez votre île depuis un bloc qui vous fournit vos ressources, en faisant attention à ne pas tomber !</p>
+        </div>
+        <div class="bulleinfo">
+            <h2>SMP faction avec magie</h2>
+            <p>Développez votre clan dans un monde survie normal en multijoueur, en utilisant des sorts pour dominer le serveur !</p>
+        </div>
+    </section>
+    <h2>Nous rejoindre</h2>
+    <section class="section">
+        <div class="bulleinfo">
+            <h2>Minecraft</h2>
+            <u><b>
+            <p>IP : n1.recloud-hosting.me:1122</p>
+            <p>VERSION : 1.20.1</p>
+            </b></u>
+        </div>
+        <div class="bulleinfo">
+            <h2>Discord</h2>
+            <p>Rejoignez le serveur Discord pour discuter sur le serveur, vous tenir au courant des derniers changements et connaitre les dates des évènements !</p>
+            <p>--> <a href="https://discord.gg/ZkBzCEgHdw">https://discord.gg/ZkBzCEgHdw</a></p>
+        </div>
     </section>
 
     <script>
@@ -51,5 +76,5 @@
             checkServerStatus();
         });
     </script>
-  </body>
+</body>
 </html>
