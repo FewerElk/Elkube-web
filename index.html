@@ -9,24 +9,26 @@
     <h1>Site en construction</h1>
     <h1>Elkube</h1>
     <h2>Statut du serveur Minecraft</h2>
-    <p id="status"></p>
+    <p id="online"></p>
+    <p id="offline"></p>
+    <p id ="error"></p>
 
     <script>
         $(document).ready(function(){
             function checkServerStatus() {
                 $.ajax({
-                    url: "https://api.mcsrvstat.us/2/n1.boomerangbs.fr:1131", // Remplacez "your-server-address.com" par l'adresse de votre serveur
+                    url: "https://api.mcsrvstat.us/2/n1.recloud-hosting.me:1122", 
                     type: "GET",
                     dataType: "json",
                     success: function(response) {
                         if(response.online) {
-                            $("#status").text("Le serveur est en ligne - Joueurs en ligne : " + response.players.online);
+                            $("#online").text("Le serveur est en ligne - Joueurs en ligne : " + response.players.online);
                         } else {
-                            $("#status").text("Le serveur est hors ligne");
+                            $("#offline").text("Le serveur est hors ligne");
                         }
                     },
                     error: function() {
-                        $("#status").text("Impossible de récupérer le statut du serveur.");
+                        $("#error").text("Impossible de récupérer le statut du serveur.");
                     }
                 });
             }
