@@ -1,5 +1,5 @@
 body {
-    background-image: url("minecraft-529459_1280.jpg");
+    background-image: url("background.png");
     padding-left: 5%;
     padding-right: 5%;
     background-attachment: fixed;
@@ -20,6 +20,7 @@ text
     padding: 5px 10px;
     border-radius: 10px; 
     display: inline-block;
+    color: white;
 }
 
 h1, h2 {
