@@ -1,5 +1,5 @@
 body {
-    background-image: url("minecraft-529459_1280.jpg");
+    background-image: url("404.jpg");
     padding-left: 5%;
     padding-right: 5%;
     background-attachment: fixed;
@@ -12,6 +12,11 @@ body {
     text-align: center;
     color: white;
     padding: 50px 0;
+}
+
+#e404
+{
+    color: white;
 }
 
 text
@@ -55,7 +60,7 @@ h1, h2 {
 }
 
 .rectangle {
-    background-color: #ffffff94;
+    background-color: #e8ffe8;
     border: 2px solid #2ecc71;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
