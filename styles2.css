@@ -1,0 +1,126 @@
+body {
+    background-image: url("background.png");
+    padding-left: 5%;
+    padding-right: 5%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+}
+
+text
+{
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 5px 10px;
+    border-radius: 10px; 
+    display: inline-block;
+    color: white;
+}
+
+h1, h2 {
+    font-family: 'Black Ops One', sans-serif;
+    font-family: 'Black Ops One', sans-serif;
+    background-color: rgba(200, 235, 1, 0.7); 
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 10px; 
+    display: inline-block;
+}
+
+.title
+{
+    /*color: white;*/
+}
+
+#status {
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: rgb(255, 238, 0);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.rectangle {
+    background-color: #ffffff94;
+    border: 2px solid #2ecc71;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.zommable
+{
+    cursor: zoom-in;
+    background-color: #ffffff94;
+    border: 2px solid #2ecc71;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+
+}
+
+.rectangle h3 {
+    font-size: 1.5em;
+    color: #2c3e50;
+}
+
+.rectangle p {
+    font-size: 1em;
+    color: #34495e;
+}
+
+.button-home {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2), 0 6px 20px rgba(0,0,0,0.19);
+    border-radius: 30px;
+    background-image: linear-gradient(to right top, #0066ff, #00a1ff, #00c6eb, #00e087, #a8eb12);
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin: 10px 0;
+}
+
+.button-home:hover {
+    background-image: linear-gradient(to right top, #0055cc, #0099cc, #00b3a1, #00c864, #91c900);
+}
+
+a {
+    color: #0066ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+u {
+    text-decoration: none;
+}
+
+li
+{
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
