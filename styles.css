@@ -105,3 +105,9 @@ a:hover {
 u {
     text-decoration: none;
 }
+
+li
+{
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
