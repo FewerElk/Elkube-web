@@ -88,6 +88,16 @@ h1, h2 {
     color: #34495e;
 }
 
+.zoomable h3 {
+    font-size: 1.5em;
+    color: #2c3e50;
+}
+
+.zoomable p {
+    font-size: 1em;
+    color: #34495e;
+}
+
 .button-home {
     box-shadow: 0 8px 16px rgba(0,0,0,0.2), 0 6px 20px rgba(0,0,0,0.19);
     border-radius: 30px;
